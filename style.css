@@ -73,9 +73,6 @@ li:hover {
 	cursor: pointer;
 	background: #f0f0f0;
 }
-li:hover .check {
-	fill: #9B2D30;
-}
 .li__text {
 	display: flex;
 	flex-direction: row-reverse;
@@ -99,5 +96,4 @@ li:hover .check {
 	height: 15px;
 	display: block;
 	padding: 0;
-	fill: #000000;
 }
