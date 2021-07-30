@@ -23,66 +23,36 @@
 		<header class="header">
 			<h1 class="header__title">Список дел</h1>
 			<div class="header__menu">
-				<input type="text" class="header__input" placeholder="Чем вы хотите заняться сегодня?">
+				<input type="text" class="header__input" placeholder="Чем вы хотите заняться сегодня?" id="input_add">
 				<button onclick="addElement()" class="btn">Добавить</button>
 			</div>
 		</header>
-		<div class="list" id="myList">
-			<ul>
-				<li>
-					<div class="li__text">
-						<svg class="check">
-							<use xlink:href="#check"></use>
-						</svg>
-						Сходить в магазин
-					</div>
-					<button onclick="deleteElement()" class="btn li__button">
-						<svg class="close">
-							<use xlink:href="#close"></use>
-						</svg>
-					</button>
-				</li>
-				<li>
-					<div class="li__text">
-						<svg class="check">
-							<use xlink:href="#check"></use>
-						</svg>
-						Сходить в магазин
-					</div>
-					<button onclick="deleteElement()" class="btn li__button">
-						<svg class="close">
-							<use xlink:href="#close"></use>
-						</svg>
-					</button>
-				</li>
-				<li>
-					<div class="li__text">
-						<svg class="check">
-							<use xlink:href="#check"></use>
-						</svg>
-						Сходить в магазин
-					</div>
-					<button onclick="deleteElement()" class="btn li__button">
-						<svg class="close">
-							<use xlink:href="#close"></use>
-						</svg>
-					</button>
-				</li>
-				<li>
-					<div class="li__text">
-						<svg class="check">
-							<use xlink:href="#check"></use>
-						</svg>
-						Сходить в магазин
-					</div>
-					<button onclick="deleteElement()" class="btn li__button">
-						<svg class="close">
-							<use xlink:href="#close"></use>
-						</svg>
-					</button>
-				</li>
-			</ul>
-		</div>
+		<ul id="myList" class="list">
+			<li>
+				<div class="li__text">
+					<svg class="check">
+						<use xlink:href="#check"></use>
+					</svg>
+					Сходить в магазин
+				</div>
+				<button onclick="deleteElement()" class="btn li__button">
+					<svg class="close">
+						<use xlink:href="#close"></use>
+					</svg>
+				</button>
+			</li>
+			<li>
+				<div class="li__text">
+					<svg class="check">
+						<use xlink:href="#check"></use>
+					</svg>
+					Сходить в магазин
+				</div>
+				<button onclick="deleteElement()" class="btn li__button">
+					<img src="img/close.svg" alt="" class="close">
+				</button>
+			</li>
+		</ul>
 	</div>
 	<script src="todo_list.js"></script>
 </body>

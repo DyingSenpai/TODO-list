@@ -78,7 +78,7 @@ li:hover .check {
 }
 .li__text {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 }
 .check {
 	display: none;
@@ -87,6 +87,8 @@ li:hover .check {
 	height: 20px;
 }
 .li__button {
+	font-size: 30px;
+	color: #000000;
 	background: 0;
 }
 .li__button:hover {
@@ -98,7 +100,4 @@ li:hover .check {
 	display: block;
 	padding: 0;
 	fill: #000000;
-}
-.li__button:hover .close {
-	fill: #ffffff;
 }
