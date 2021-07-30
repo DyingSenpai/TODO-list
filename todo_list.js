@@ -5,11 +5,10 @@ function addElement() {
 	let li = document.createElement('li'); // Создаём пункт списка
 	let div = document.createElement('div'); // Создаём див для пункта списка
 	let btn = document.createElement('button');
-	btn.setAttribute("onclick", "deleteElement()");
-	btn.className += "btn li__button";
+	//btn.setAttribute("onclick", "deleteElement()");
+	btn.className += "btn li__button close";
 	let img_close = document.createElement('img');
 	img_close.setAttribute("src", "img/close.svg");
-	img_close.className += "close";
 	btn.appendChild(img_close);
 	let img_check = document.createElement('img');
 	img_check.setAttribute("src", "img/check.svg");
@@ -23,7 +22,11 @@ function addElement() {
 	document.getElementById('input_add').value = "";
 	// appendChild(node) - старый код 
 }
-function deleteElement() {
-	// let elem = this;
-	// elem.remove();
+// Удаление элемента списка
+document.querySelector('ul').onclick = function(e) {
+	const btn = e.target.closest('.close');
+	if(!btn) {
+		return;
+	}
+	btn.parentElement.remove();
 }
