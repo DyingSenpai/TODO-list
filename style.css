@@ -42,7 +42,7 @@ body {
 	height: 35px;
 	border: 0;
 	border-radius: 5px;
-	background: #9B2D30;
+	background: #BC6D4F;
 	color: #ffffff;
 	transition: .1s linear;
 }
@@ -72,7 +72,7 @@ li {
 }
 li:hover {
 	cursor: pointer;
-	background: #f0f0f0;
+	background: #EBDCB2;
 }
 .li__text {
 	display: flex;
@@ -87,10 +87,10 @@ li:hover {
 .li__button {
 	font-size: 30px;
 	color: #000000;
-	background: 0;
+	background: #BC6D4F;
 }
 .li__button:hover {
-	background: #9B2D30;
+	opacity: 0.7;
 }
 .close img {
 	width: 15px;
@@ -100,4 +100,12 @@ li:hover {
 }
 .active {
 	text-decoration: line-through;
+	background: #C9A66B;
+	color: #ffffff;
+}
+.active:hover {
+	background: #EBDCB2;
+}
+.active .check {
+	display: block;
 }
