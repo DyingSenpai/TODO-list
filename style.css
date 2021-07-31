@@ -57,6 +57,7 @@ body {
 	align-items: space-between;
 	background: #ffffff;
 	box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+	user-select: none;
 }
 li {
 	display: flex;
@@ -96,4 +97,7 @@ li:hover {
 	height: 15px;
 	display: block;
 	padding: 0;
+}
+.active {
+	text-decoration: line-through;
 }
